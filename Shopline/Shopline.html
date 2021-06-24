@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        ul{
+           padding-inline-start: 0;
+        }
+        li{
+            list-style: none;
+            font-size: 20px;
+        }
+        h1{
+
+        }
+        h2{
+
+        }
+        h3{   
+            font-size: 40px;
+        }
+        h4{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+       .headtool a:link {
+            color: white;
+            text-decoration: none;
+        }
+        .headtool a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        .headtool a:hover {
+        　color:blue;
+        }
+        
+        /* a:active {
+        　
+        } */
+        .head{
+            position: fixed;
+            right: 0;
+            top: 10px;
+            width: 100%;
+            margin-top: -2.5em;
+        }
+       
+       .headtool ul{
+           margin-bottom: 0;
+           padding-right: 260px;
+           background-color: #00142D;
+           display: flex;
+           flex-direction:row;
+           justify-content: flex-end;
+       }
+       .headtool li{
+           margin: 20px;
+       }
+       .headtool i{
+           color: wheat;
+           text-decoration: none;
+       }
+       .headlinkgroup{
+        margin: 0;
+        background-color: white;
+        display: flex;
+        padding-left: 200px;
+        padding-right: 200px;
+       }
+       .Logo{
+           padding-right: 40px;
+       }
+       .headlinkgroup li{
+
+       }
+      
+       .freebtn{
+            text-align: end;
+        }
+       
+       main {
+            padding-left: 260px;
+            padding-right: 260px;
+
+        }
+        h3{
+           text-align: center;
+        }
+        .maintitle p{
+            text-align: center;
+        }
+        .maincontent {
+            display: flex;
+            flex-direction: column;
+       
+       }
+       .contentgroup{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       }
+
+       .text ul{
+         
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: wrap;
+       }
+       .text li{
+           width: 50%;
+           margin-bottom: 10px;
+       }
+       .detail a{
+           font-size: 25px;
+       }
+       .moreservice ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+      }
+      .moreservice li{
+          width: 33%;
+      }
+    </style>
+
+</head>
+<body>
+   <header>
+       <div class="head">
+            <nav class="headtool">
+                <ul>
+                    <li class="language">
+                    <i class="fas fa-globe"></i>
+                    </li>
+                    <li>
+                        <a href="">幫助中心</a>
+                    </li>
+                    <li>
+                        <a href="">登入網店</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="headHlink">
+                
+                <ul class="headlinkgroup">
+                    <li class="Logo">
+                        <a href="/HW/Shopline.html">
+                        <img src="Shopline/logo.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="">開店服務</a></li>
+                    <li><a href="">方案費用</a></li>
+                    <li><a href="">客戶案例</a></li>
+                    <li><a href="">開店說明會</li>
+                    <li><a href="">開店諮詢</li>
+                    <li><a href="">更多解決方案</a></li>
+                    <li><a href="">其他資源</li>
+                    <li class="freebtn"><a href="">免費試用</a></li>
+    
+                </ul>
+            </nav>
+       </div>
+       <!-- <section class="headmain">
+        <div >
+            <h1>想在哪開店創業</h1>
+            <h2>社群購物貼近顧客零距離</h2>
+            <p>超過25萬品牌使用!從個人賣家到國際品牌，都能以SHOPLINE實<br>現現全通路零售，快速拓展市場到世界各地，輕鬆開始你的『 店 』商生<br>
+            意！</p>
+        </div>
+        <div>
+            <img src="/HW/Shopline/original.png" alt="">
+        </div>
+    </section>
+   </header> -->
+
+   <main>
+       <div class="maintitle">
+            <h3>
+                單一平台就能助你<br>
+                在全通路輕鬆開店創業
+            </h3>
+            <p>
+                從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，<br>
+                並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！
+            </p>
+       </div>
+       <div class="maincontent">
+          <div class="contentgroup" >
+            <section class="text">
+                <h4>免寫程式、多款版型<br>
+                    輕鬆打造全能電商網站
+                </h4>
+                <i class="fas fa-wave-square"></i>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖<br>曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+                <ul >
+                    <li><i class="fas fa-check-circle"></i>豐富版型主題與字型搭配</li>
+                    <li><i class="fas fa-check-circle"></i>RWD 響應式網頁設計</li>
+                    <li><i class="fas fa-check-circle"></i>獨有網址 ＆ SSL 安全憑證</li>
+                    <li><i class="fas fa-check-circle"></i>SEO 搜尋引擎優化</li>
+                    <li><i class="fas fa-check-circle"></i>一頁商店</li>
+                    <li><i class="fas fa-check-circle"></i>開放 HTML／CSS 編輯</li>
+                </ul>
+                <div class="detail">
+                    <a href="">看看開店密技</a>
+                </div>
+            </section>
+            <div class="pic">
+                <img src="/HW/Shopline/main1.png" alt="">
+            </div>
+          </div>
+          
+          <div class="contentgroup">
+            <div class="pic">
+                <img src="/HW/Shopline/main2.png" alt="">
+            </div>
+            <section class="text">
+                <h4>支持海內外電商<br>
+                    金流、物流一次搞定
+                </h4>
+                <i class="fas fa-wave-square"></i>
+                <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，加速消費<br>者完成下單交易，大幅降低購物車放棄率！</p>
+                <ul >
+                    <li><i class="fas fa-check-circle"></i>線上信用卡刷卡</li>
+                    <li><i class="fas fa-check-circle"></i>第三方金流／行動支付整合</li>
+                    <li><i class="fas fa-check-circle"></i>超商代碼／條碼繳費</li>
+                    <li><i class="fas fa-check-circle"></i>多溫層宅配並指定運費</li>
+                    <li><i class="fas fa-check-circle"></i>超商／宅配貨到付款</li>
+                    <li><i class="fas fa-check-circle"></i>發票開立與串接</li>
+                </ul>
+                <div class="detail">
+                    <a href="">了解更多金物流</a>
+                </div>
+            </section>
+          </div>
+            
+          <div class="contentgroup" >
+            <section class="text">
+                <h4>O2O 全通路無縫整併<br>
+                    輕鬆管理網店、門市以及其他通路
+                </h4>
+                <i class="fas fa-wave-square"></i>
+                <p>多元優惠活動、會員集客機制、網紅分潤以及直播購物等豐富功能，將電商行銷玩法一網打盡，助你成功優化行銷活動成效，刺激顧客下單、吸引鐵粉回購！。</p>
+                <ul >
+                    <li><i class="fas fa-check-circle"></i>超過 20 種優惠促銷功能</li>
+                    <li><i class="fas fa-check-circle"></i>社群直播購物系統</li>
+                    <li><i class="fas fa-check-circle"></i>會員分級／點數／購物金</li>
+                    <li><i class="fas fa-check-circle"></i>Facebook／Google／LINE 廣告追蹤</li>
+                    <li><i class="fas fa-check-circle"></i>Instagram 購物功能</li>
+                    <li><i class="fas fa-check-circle"></i>Facebook／LINE 對話式購物</li>
+                </ul>
+                <div class="detail">
+                    <a href="">看更多優惠模組</a>
+                </div>
+            </section>
+            <div class="pic">
+                <img src="/HW/Shopline/main3.png" alt="">
+            </div>
+          </div>
+
+          <div class="contentgroup">
+            <div class="pic">
+                <img src="/HW/Shopline/main4.png" alt="">
+            </div>
+            <section class="text">
+                <h4>O2O 全通路無縫整併<br>
+                    輕鬆管理網店、門市以及其他通路
+                    
+                </h4>
+                <i class="fas fa-wave-square"></i>
+                <p>不論是網店拓展門市，還是門市想發展網路生意，從商品、庫存、訂單等各項虛實店舖的資料都能完善整併，輕鬆實現全通路會員經營到多店營運。</p>
+                <ul >
+                    <li><i class="fas fa-check-circle"></i>門市 POS 系統</li>
+                    <li><i class="fas fa-check-circle"></i>線上線下會員／商品／庫存整合</li>
+                    <li><i class="fas fa-check-circle"></i>門市快速集客工具</li>
+                    <li><i class="fas fa-check-circle"></i>O2O 即時銷售報表分析</li>
+                    <li><i class="fas fa-check-circle"></i>進銷庫存／調撥／多店管理</li>
+                    <li><i class="fas fa-check-circle"></i>串接 Shopee 蝦皮購物庫存</li>
+                </ul>
+                <div class="detail">
+                    <a href="">了解更多全通路整合</a>
+                </div>
+            </section>
+          </div>
+
+       </div>
+       <div class="moreservice">
+            <div>
+                <h3>更多功能與服務</h3>
+            </div>
+            <ul>
+                <li>
+                    <img src="/HW/Shopline/other1.png" alt="">
+                    <h5>強大庫存及訂單系統</h5>
+                    <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感</p>
+                </li>
+                <li>
+                        <img src="/HW/Shopline/other2.png" alt="">
+                        <h5>即時化商店業績分析</h5>
+                        <p>圖表化報表助你一手掌握商店概況，讓數據助攻企業成長，營運策略更有方向。</p>
+                </li>
+                <li>
+                    <img src="/HW/Shopline/other3.png" alt="">
+                    <h5>多國語系、幣值切換</h5>
+                    <p>想做跨境電商也ＯＫ！提供語言、幣別、稅金等進階功能，友善應對海外消費需求。</p>
+                </li>
+                <li>
+                    <img src="/HW/Shopline/other4.png" alt="">
+                    <h5>專業顧問線上支援</h5>
+                    <p>迅速、透明的溝通管道，協助你快速解決從線上到線下、從在地到海外的網店疑難。</p>
+                </li>
+                <li>
+                    <img src="/HW/Shopline/other5.png" alt="">
+                    <h5>廣告行銷加值服務</h5>
+                    <p>由官方認證的專業投手團隊，協助品牌投遞 Facebook、Google、LINE 等廣告。</p>
+                </li>
+                <li>
+                    <img src="/HW/Shopline/other6.png" alt="">
+                    <h5>老闆專屬成長社群</h5>
+                    <p>致力為品牌店家打造能深度交流且互助的生態體系，是拓展人脈、商機的絕佳場域。</p>
+                </li>
+            </ul>
+       </div>
+   </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
