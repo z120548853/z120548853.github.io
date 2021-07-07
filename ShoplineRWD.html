@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        
         body{
             width: auto;
             margin: 0;
@@ -151,6 +152,7 @@
            padding-left: 260px;
            padding-right: 260px;
            display: flex;
+           flex-flow: row-reverse wrap;
            justify-content: space-between;
            align-items: center ;
            height: 800px;
@@ -200,10 +202,22 @@
             flex-direction: column;
        
        }
+       .pic{
+           width: 50%;
+       }
+       .pic img {
+        width: 100%;
+       }
+       .text{
+           width: 50%;
+       }
        .contentgroup{
         display: flex;
-        flex-direction: row;
+        flex-wrap:  wrap;
         align-items: center;
+       }
+       .contentgroup:nth-child(2n+1){
+           flex-direction: row-reverse;
        }
 
        .text ul{
@@ -293,8 +307,24 @@
       .moreinfo a{
         color: silver;
       }
+      @media screen and(max-width:767px) {
+            .col{
+                width: 50%;
+            }
+        }
+      @media screen and(min-width:768px) {
+        .headlink .detail{
+                display: none;
 
-     
+            }
+        }
+        @media screen and(min-width:992px) {
+           
+        }
+       
+        @media screen and(min-width:1200px) {
+            .head
+        }
     </style>
 
 </head>
@@ -338,6 +368,9 @@
             </nav>
        </div>
         <section class="headmain">
+            <div>
+                <img src="Shopline/original.png" alt="" >
+            </div>
             <div >
                 <h1>想在哪開店創業<br>
                    <span> 社群購物貼近顧客零距離</span>
@@ -349,9 +382,7 @@
                     <button type="submit" class="freebtn" >免費試用</button>
                 </form>
             </div>
-            <div>
-                <img src="Shopline/original.png" alt="" >
-            </div>
+            
         </section>
    </header>
 
@@ -368,12 +399,15 @@
        </div>
        <div class="maincontent">
           <div class="contentgroup" >
+            <div class="pic">
+                <img src="Shopline/main1.png" alt="">
+            </div>
             <section class="text">
                 <h2>免寫程式、多款版型<br>
                     輕鬆打造全能電商網站
                 </h2>
                 <i class="fas fa-wave-square"></i>
-                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖<br>曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
+                <p>不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣簡單。</p>
                 <ul >
                     <li><i class="fas fa-check-circle"></i>豐富版型主題與字型搭配</li>
                     <li><i class="fas fa-check-circle"></i>RWD 響應式網頁設計</li>
@@ -386,9 +420,7 @@
                     <a href="">看看開店密技</a>
                 </div>
             </section>
-            <div class="pic">
-                <img src="Shopline/main1.png" alt="">
-            </div>
+            
           </div>
           
           <div class="contentgroup">
@@ -400,7 +432,7 @@
                     金流、物流一次搞定
                 </h2>
                 <i class="fas fa-wave-square"></i>
-                <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，加速消費<br>者完成下單交易，大幅降低購物車放棄率！</p>
+                <p>支持在地及國際金流、物流串接服務，提供海內外顧客最便利的付款及送貨服務，加速消費者完成下單交易，大幅降低購物車放棄率！</p>
                 <ul >
                     <li><i class="fas fa-check-circle"></i>線上信用卡刷卡</li>
                     <li><i class="fas fa-check-circle"></i>第三方金流／行動支付整合</li>
@@ -416,6 +448,9 @@
           </div>
             
           <div class="contentgroup" >
+            <div class="pic">
+                <img src="Shopline/main3.png" alt="">
+            </div>
             <section class="text">
                 <h2>O2O 全通路無縫整併<br>
                     輕鬆管理網店、門市以及其他通路
@@ -434,9 +469,7 @@
                     <a href="">看更多優惠模組</a>
                 </div>
             </section>
-            <div class="pic">
-                <img src="Shopline/main3.png" alt="">
-            </div>
+            
           </div>
 
           <div class="contentgroup">
