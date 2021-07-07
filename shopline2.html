@@ -189,7 +189,9 @@
            border:none ;
            font-size: 20px;
        }
-       
+       .headlink .linkdetail,.headlink .freebtn{
+                display:none;
+            }
        
        
         .maintitle p{
@@ -305,9 +307,7 @@
         color: silver;
       }
        @media screen and (max-width:767px) {
-        .headlink .linkdetail{
-                display: none;
-            }
+      
         .headtool ul{
                 padding-left: 10px;
                 padding-right: 10px;
@@ -379,10 +379,8 @@
         }
 
         @media screen and (min-width:1024px) {
-            .headlink .linkdetail{
-                display:flex;
-
-            }
+           
+          
             .headmain{
                 flex-direction: column-reverse;
             }
@@ -396,6 +394,7 @@
                 padding-right: 25px;
             }
             .headlink{
+                
                 padding-left: 25px;
                 padding-right: 25px;
             }   
@@ -431,6 +430,10 @@
                 display: flex;
                 flex-wrap: wrap;
             } */
+            .headlink .linkdetail,.headlink .freebtn{
+                display:flex;
+
+            }
             .maincontent .contentgroup{
                 flex-direction: row ;
                 
