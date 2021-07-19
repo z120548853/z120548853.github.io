@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>終極密碼</title>
+
+
+</head>
+    <style>
+       .btnGroup button{
+        width: 50px;
+        margin: 5px;
+       }
+       
+       
+    </style>
+<body>
+    <div class="container d-flex flex-column w-25 align-items-center ">
+        <div class="containerDisplay w-100 m-5 border border-dark " ><h1 class="display text-center">0~100</h1></div>
+        <button class="start badge bg-primary w-50  m-2">產生數字</button>
+        <div class="m-3">
+            <input class="guessNumber" type="text" value="" >    
+        </div>
+        <div class="btnGroup">
+            <button class="number" value="1" onclick="numbtn('1')" >1</button>
+            <button class="number" value="2" onclick="numbtn('2')" >2</button>
+            <button class="number" value="3" onclick="numbtn('3')" >3</button>
+             <br>
+            <button class="number" value="4" onclick="numbtn('4')" >4</button>
+            <button class="number" value="5" onclick="numbtn('5')" >5</button>
+            <button class="number" value="6" onclick="numbtn('6')" >6</button>
+            <br>
+            <button class="number" value="7" onclick="numbtn('7')" >7</button>
+            <button class="number" value="8" onclick="numbtn('8')" >8</button>
+            <button class="number" value="9" onclick="numbtn('9')" >9</button>
+            <br>
+            <button class="reset" onclick="reset()" >x</button>
+            <button class="number" value="0" onclick="numbtn('0')" >0</button>
+            <button class="enter" onclick="enter()" >v</button>
+        </div>
+        
+    </div>
+    <script>
+        //開始
+        let answer;
+        let guessBtn = document.querySelector('.badge');
+        let guessNumber = document.querySelector('.guessNumber');
+        let number =document.querySelectorAll('.number');
+
+        window.onload=function(){
+            guessNumber.disabled=true;
+            document.querySelectorAll(".btnGroup button").forEach((item,index) => {
+                item.setAttribute("disabled","true")
+            });
+            
+        }
+
+        guessBtn.addEventListener('click', function(){
+            answer=createRandom();
+            console.log(answer);
+            console.log(min);
+            console.log(max);
+            document.querySelector(".start").disabled=true;
+            guessNumber.disabled=false;
+
+            document.querySelectorAll(".btnGroup button").forEach((item,index) => {
+                item.removeAttribute("disabled",false)
+            });
+        });
+        
+        
+        // number.forEach((item,index) => {
+        //         item.disabled=true;
+        //     });
+        //產生亂數答案
+        function createRandom(){
+            return Math.floor(Math.random()*99)+1;
+            display.innerHTML=`${min.toString}~${max.toString}`;
+          
+        }
+    
+        //按鈕數字輸入
+        
+        
+        
+        
+        
+    
+        function numbtn(num){
+            guessNumber.value+=num;
+            
+        }
+        
+        //重設數字
+        function reset(){
+            guessNumber.value="";
+        }
+    
+        let max=100,min=0;
+        
+        let display=document.querySelector(".dispaly");
+        //輸入
+        function enter(){
+            if(guessNumber.value==answer){
+                alert("猜對了");
+                min=0;
+                max=100;
+                guessNumber.disabled=true;
+                document.querySelectorAll(".btnGroup button").forEach((item,index) => {
+                item.setAttribute("disabled","true")
+            });
+            }
+            else if((guessNumber.value<min||guessNumber.value>max)){
+                alert("請重新輸入");
+                console.log(`最小值${min}`);
+                console.log(`最小值${max}`);
+            }
+                
+            else if(guessNumber.value<answer){
+                min=guessNumber.value;
+                
+            }
+            else if(guessNumber.value>answer){
+                max=guessNumber.value;
+                
+            }
+            guessNumber.value="";
+            
+            document.querySelector(".display").innerHTML=`${min}~${max}`;
+    
+            
+    
+        }
+    </script>
+</body>
+
+</html>
